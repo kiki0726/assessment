@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./program.js"></script>
+  <script src="./joronB.js"></script>
+</head>
+<body>
+  <p id="msg_start"></p>
+  <div style="display: flex;">
+    <ul>
+      <p id="msg_next" class="msg"></p>
+      <canvas width="70" height="70" id="fore_canvas" style="margin-right: 10px; display: block;"></canvas>
+      <canvas width="70" height="70" id="sub_fore_canvas" style="margin-right: 10px; margin-top: 15px; display: block;"></canvas>
+      <canvas width="70" height="70" id="sub_fore_canvas2" style="margin-right: 10px; margin-top: 10px; display: block;"></canvas>
+    </ul>
+    <canvas width="300" height="600" id="main_canvas"></canvas>
+    <div>
+      <p id="msg_hold" class="msg"></p>
+      <canvas width="70" height="70" id="hold_canvas" style="margin-left: 15px; display: block;"></canvas>
+      <p id="msg_level" class="msg"></p>
+      <p id="msg_skill" class="msg"></p>
+    </div>
+    <p id="msg_desc">
+  </div>
+  <p id="msg"></p>
+  <div>
+    <input type="button" value="L  E  F  T" onclick="moveHidari()">
+    <input type="button" value="S  P  I  N" onclick="kaiten()">
+    <input type="button" value="R  I  G  H  T" onclick="moveMigi()">
+  </div>
+  <input type="button" value="H  O  L  D" onclick="hold()">
+  <input type="button" value="D  O  W  N" onclick="moveShita()">
+  <input type="button" value="F  A  L  L" onclick="moveChokka()">
+</body>
+</html>
